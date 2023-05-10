@@ -1,6 +1,15 @@
 import os.path
 from pathlib import Path
 
+EMAIL_USE_SSL=True
+EMAIL_HOST='smtp.qq.com'
+EMAIL_PORT=465
+EMAIL_HOST_USER='1443815378@qq.com'
+EMAIL_HOST_PASSWORD='kfeyscbbfspahegb'
+EMAIL_FROM='pgtwo'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+EMAIL_TITLE='邮箱激活'
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-9d)*5&t6sfx2415%^szt#uo8#r^-5@!6)r*a%c$i925k7u@7!8"
 DEBUG = True
