@@ -4,7 +4,85 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abeb432b-d8f7-4320-bb78-46a3f222be3d" name="Changes" comment="django_model created and admin-site construction" />
+    <list default="true" id="abeb432b-d8f7-4320-bb78-46a3f222be3d" name="Changes" comment="django_model created and admin-site construction">
+      <change beforePath="$PROJECT_DIR$/.idea/daily_fresh.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/daily_fresh.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FYP/[2023-04] AcademicProjectLogbook.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/user/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/user/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_fresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/daily_fresh/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/daily_fresh/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/daily_fresh/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/image/sleepy_nuo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods002.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods003.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods004.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods005.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods006.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods007.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods008.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods009.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods010.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods011.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods012.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods013.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods014.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods014_M074jyD.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods014_fDELOS9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods014_tYMrWlZ.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods015.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods016.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods017.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods018.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods019.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods020.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods021.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods022.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods023.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods024.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods025.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods026.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods027.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods028.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods029.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods030.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods031.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods032.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods033.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods034.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods035.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods036.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods037.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods038.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods039.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods040.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods041.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/goods042.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/slide.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/slide02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/slide03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/df_goods/slide04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner01.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner02.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner03.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner04.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner05.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/images/banner06.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/place_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/place_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +95,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -45,10 +124,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python文件/pythonProject/daily_fresh/templates&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python文件/pythonProject/daily_fresh/FYP-/templates&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -64,11 +144,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python文件\pythonProject\daily_fresh\FYP-\templates" />
       <recent name="D:\python文件\pythonProject\daily_fresh\templates" />
       <recent name="D:\python文件\pythonProject\daily_fresh\static" />
       <recent name="D:\python文件\pythonProject\daily_fresh\apps\cart" />
       <recent name="D:\python文件\pythonProject\daily_fresh\apps\goods" />
-      <recent name="D:\python文件\pythonProject\daily_fresh\apps\order" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python文件\pythonProject\daily_fresh\apps" />
@@ -114,6 +194,12 @@
       <workItem from="1681712711216" duration="7156000" />
       <workItem from="1681725360913" duration="6853000" />
       <workItem from="1681804018725" duration="9157000" />
+      <workItem from="1683987170310" duration="134000" />
+      <workItem from="1683987355548" duration="3411000" />
+      <workItem from="1684045477659" duration="14314000" />
+      <workItem from="1684141007938" duration="9779000" />
+      <workItem from="1684231318330" duration="10585000" />
+      <workItem from="1684246888545" duration="7001000" />
     </task>
     <servers />
   </component>
@@ -130,5 +216,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="django-line">
+          <url>file://$PROJECT_DIR$/templates/base.html</url>
+          <line>44</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

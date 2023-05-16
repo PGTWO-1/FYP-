@@ -1,6 +1,9 @@
 import os.path
 from pathlib import Path
-
+import os
+# import django
+# os.environ.setdefault('DJANGO_SETTING_MODULE','daily_fresh.settings')
+# django.setup()
 EMAIL_USE_SSL=True
 EMAIL_HOST='smtp.qq.com'
 EMAIL_PORT=465
@@ -10,10 +13,24 @@ EMAIL_FROM='pgtwo'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 EMAIL_TITLE='邮箱激活'
 
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
 BASE_DIR = Path(__file__).resolve().parent.parent
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"
+SESSION_CACHE_ALIAS = "default"
+LOGIN_URL='/user/login'
 SECRET_KEY = "django-insecure-9d)*5&t6sfx2415%^szt#uo8#r^-5@!6)r*a%c$i925k7u@7!8"
 DEBUG = True
 ALLOWED_HOSTS = []
+
+
 # Application definition
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -53,11 +70,16 @@ TEMPLATES = [
                 "django.template.context_processors.debug",
                 "django.template.context_processors.request",
                 "django.template.context_processors.static",
+                # "django.template.context_processors.media",
                 "django.contrib.auth.context_processors.auth",
                 "django.contrib.messages.context_processors.messages",
             ],
         },
     },
+]
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
 ]
 
 WSGI_APPLICATION = "daily_fresh.wsgi.application"
@@ -112,11 +134,6 @@ AUTH_USER_MODEL='user.User'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
-
-STATIC_URL = '/static/'
-STATICFILES_DIRS = [
-    BASE_DIR / "static",
-]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
