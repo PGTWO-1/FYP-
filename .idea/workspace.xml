@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abeb432b-d8f7-4320-bb78-46a3f222be3d" name="Changes" comment="Dynamically show goods information and finish the user center part">
+    <list default="true" id="abeb432b-d8f7-4320-bb78-46a3f222be3d" name="Changes" comment="finish goods list and detail part&#10;create search bar by using whoosy and haystack frame&#10;using jquery to realize 'add' and 'minus' amount button">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/goods/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/goods/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_fresh/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/daily_fresh/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/daily_fresh/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/daily_fresh/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cart/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cart/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,26 +48,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/python文件/pythonProject/daily_fresh/FYP-/static/css",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "settings.editor.selected.configurable": "shared-indexes",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python文件/pythonProject/daily_fresh/FYP-/templates&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;shared-indexes&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python文件\pythonProject\daily_fresh\FYP-\templates" />
@@ -133,7 +127,9 @@
       <workItem from="1684231318330" duration="10585000" />
       <workItem from="1684246888545" duration="7227000" />
       <workItem from="1684301302950" duration="16379000" />
-      <workItem from="1684413336246" duration="5551000" />
+      <workItem from="1684413336246" duration="5774000" />
+      <workItem from="1684427603372" duration="4479000" />
+      <workItem from="1684477806808" duration="10365000" />
     </task>
     <task id="LOCAL-00001" summary="Dynamically show goods information and finish the user center part">
       <created>1684254193382</created>
@@ -142,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684254193382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="finish goods list and detail part&#10;create search bar by using whoosy and haystack frame&#10;using jquery to realize 'add' and 'minus' amount button">
+      <created>1684419829732</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1684419829732</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +164,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Dynamically show goods information and finish the user center part" />
-    <option name="LAST_COMMIT_MESSAGE" value="Dynamically show goods information and finish the user center part" />
+    <MESSAGE value="finish goods list and detail part&#10;create search bar by using whoosy and haystack frame&#10;using jquery to realize 'add' and 'minus' amount button" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish goods list and detail part&#10;create search bar by using whoosy and haystack frame&#10;using jquery to realize 'add' and 'minus' amount button" />
   </component>
 </project>
