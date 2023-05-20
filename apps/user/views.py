@@ -136,7 +136,7 @@ class UserOrderView(View):
 class UserAddressView(View):
     def get(self, request):
         user=request.user
-        address=Address.objects.get_default_address(user)
+        address=Address.objects.filter(user=user)
         return render(request, 'user_center_site.html', {'page': 'address','address':address})
     def post(self,request):
         receiver=request.POST.get('receiver')

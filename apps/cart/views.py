@@ -13,6 +13,7 @@ class CartAddView(View):
         if not user.is_authenticated:
             return JsonResponse({'res': 0, 'errmsg': '请先登录'})
         sku_id = request.POST.get('sku_id')
+        print(sku_id,type(sku_id))
         count = request.POST.get('count')
         if not all([sku_id, count]):
             return JsonResponse({'res': 1, 'errmsg': '数据不完整'})
