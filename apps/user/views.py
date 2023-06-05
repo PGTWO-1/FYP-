@@ -1,12 +1,14 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
-from .models import User,Address,AddressManager
+from .models import User, Address, AddressManager
 import re
 from django.core.mail import send_mail
 from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from itsdangerous import SignatureExpired
 from django.http import HttpResponse
-from django.contrib.auth import authenticate, login,logout
+from django.contrib.auth import authenticate, login, logout
+from apps.order.models import OrderInfo, OrderGoods
+from django.core.paginator import Paginator
 
 SECRET_KEY = "django-insecure-9d)*5&t6sfx2415%^szt#uo8#r^-5@!6)r*a%c$i925k7u@7!8"
 
@@ -98,7 +100,7 @@ class LoginView(View):
         if user is not None:
             if user.is_active:
                 login(request, user)
-                next_url = request.GET.get('next','goods:index')
+                next_url = request.GET.get('next', 'goods:index')
                 print(next_url)
                 response = redirect(next_url)
                 # check whether need to remember username
@@ -115,44 +117,84 @@ class LoginView(View):
         else:
             return render(request, 'login.html', {'errmsg': '用户名密码错误'})
 
+
 class LogoutView(View):
-    def get(self,request):
+    def get(self, request):
         logout(request)
         return redirect('goods:index')
+
+
 class UserInfoView(View):
     def get(self, request):
         # get user information and history
-        user=request.user
-        address=Address.objects.get_default_address(user)
+        user = request.user
+        address = Address.objects.get_default_address(user)
 
-        return render(request, 'user_center_info.html', {'page': 'user','address':address})
+        return render(request, 'user_center_info.html', {'page': 'user', 'address': address})
 
 
 class UserOrderView(View):
-    def get(self, requrst):
-        return render(requrst, 'user_center_order.html', {'page': 'order'})
+    def get(self, request, page):
+        user = request.user
+        orders = OrderInfo.objects.filter(user=user)
+        for order in orders:
+            order_skus = OrderGoods.objects.filter(order_id=order.order_id)
+            for order_sku in order_skus:
+                count = order_sku.count
+                price = order_sku.price
+                amount = price * int(count)
+                order_sku.amount = amount
+            order.order_skus = order_skus
+            order.order_status_name = OrderInfo.ORDER_STATUS[order.order_status]
+
+        paginator = Paginator(orders, 5)
+        try:
+            page = int(page)
+        except Exception as e:
+            page = 1
+        if page > paginator.num_pages:
+            page = 1
+        order_page = paginator.page(page)
+
+        num_pages = paginator.num_pages
+        if num_pages < 5:
+            pages = range(1, num_pages)
+        elif page <= 3:
+            pages = range(1, 6)
+        elif num_pages - page <= 2:
+            pages = range(num_pages - 4, num_pages + 1)
+        else:
+            pages = range(page - 2, page + 3)
+
+        dict = {
+            'order_page': order_page,
+            'pages': pages,
+            'page': 'order'
+        }
+        return render(request, 'user_center_order.html', dict)
 
 
 class UserAddressView(View):
     def get(self, request):
-        user=request.user
-        address=Address.objects.filter(user=user)
-        return render(request, 'user_center_site.html', {'page': 'address','address':address})
-    def post(self,request):
-        receiver=request.POST.get('receiver')
-        addr=request.POST.get('addr')
+        user = request.user
+        address = Address.objects.filter(user=user)
+        return render(request, 'user_center_site.html', {'page': 'address', 'address': address})
+
+    def post(self, request):
+        receiver = request.POST.get('receiver')
+        addr = request.POST.get('addr')
         print(addr)
-        zip_code=request.POST.get('zip_code')
-        phone=request.POST.get('phone')
-        if not all([receiver,addr,zip_code,phone]):
-            return render(request,'user_center_site.html',{'errmsg':'数据不完整'})
-        user=request.user
-        address=Address.objects.get_default_address(user)
+        zip_code = request.POST.get('zip_code')
+        phone = request.POST.get('phone')
+        if not all([receiver, addr, zip_code, phone]):
+            return render(request, 'user_center_site.html', {'errmsg': '数据不完整'})
+        user = request.user
+        address = Address.objects.get_default_address(user)
 
         if address is not None:
-            is_default=False
+            is_default = False
         else:
-            is_default=True
+            is_default = True
         # add address
         Address.objects.create(user=user,
                                receiver=receiver,

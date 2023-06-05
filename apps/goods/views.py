@@ -22,7 +22,7 @@ class IndexView(View):
         cart_count = 0
         if user.is_authenticated:
             connection = get_redis_connection('default')
-            cart_key = 'cart_%d' % user.id
+            cart_key  = 'cart_%d' % user.id
             cart_count = connection.hlen(cart_key)
         else:
             cart_count = 0
@@ -111,3 +111,4 @@ class ListView(View):
                 'cart_count': cart_count,
                 'sort': sort}
         return render(request, 'list.html', dict)
+

@@ -29,7 +29,8 @@ LOGIN_URL='/user/login'
 SECRET_KEY = "django-insecure-9d)*5&t6sfx2415%^szt#uo8#r^-5@!6)r*a%c$i925k7u@7!8"
 DEBUG = True
 ALLOWED_HOSTS = []
-
+ALIPAY_APPID = '2021000122674394'
+ALIPAY_URL = 'https://openapi-sandbox.dl.alipaydev.com/gateway.do'  # 支付宝网关
 
 # Application definition
 INSTALLED_APPS = [
