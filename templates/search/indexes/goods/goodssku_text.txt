@@ -1,0 +1,3 @@
+{{ object.name }} #Creating index by attribute
+{{ object.desc }}
+{{ object.goods.detail }}
